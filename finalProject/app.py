@@ -1,8 +1,13 @@
 from flask import *
 import mysql.connector
 import json
+from werkzeug.utils import secure_filename
+
+UPLOAD_FOLDER = '/home/kpomroy/Desktop/CS121/finalProject/videos'
+ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'mp4'}
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 credentials = json.load(open("credentials.json", "r"))
 
