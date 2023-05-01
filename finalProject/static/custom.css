@@ -1,0 +1,137 @@
+:root{
+    --main-text-color: black;
+    --main-secondary-color: steelblue;
+    --nav-bg-color-rgba: steelblue;
+    --main-bg-color-rgba: white;
+    --background-odd:rgba(189, 226, 255, 0.7);
+    --background-even: rgba(226, 242, 255, 0.8);
+    --header-color-rgba: steelblue;
+}
+
+html{
+    background-color: var(--main-bg-color-rgba);
+    color: var(--main-text-color);
+    font-family: monospace, arial;
+    padding: .5em;
+}
+
+a{
+    color: black;
+}
+
+button{
+    display:block;
+    margin:auto;
+    border:steelblue;
+    border-style: solid;
+    width: 50%;
+    height: 5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+button:hover{
+    background-color:steelblue;
+    color:white;
+}
+
+header{
+    background-color: var(--background-odd);
+}
+
+a:hover{
+    color:var(--main-secondary-color);
+}
+
+
+.activePage{
+    color:var(--nav-bg-color-rgba)
+}
+
+table{
+    width: 90%;
+    text-align: center;
+    padding-left:5em;
+}
+
+th{
+    border:black;
+    border-style:solid;
+    font-size:x-large
+}
+
+td{
+    border:black;
+    border-style:solid;
+}
+
+figcaption{
+    font-size: x-small;
+}
+
+figure{
+    min-width: 20em;
+    max-width: 25em;
+    text-align: center;
+}
+
+footer{
+    background-color: var(--main-bg-color-rgba);
+}
+
+
+header{
+    background-color: var(--main-bg-color-rgba);
+}
+
+h1{
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    font-size: xxx-large
+}
+
+h2{
+    font-size: xx-large;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+    padding:1%;
+}
+
+
+main{
+    background-color: var(--main-bg-color-rgba);
+    padding: 1em;
+}
+
+nav{
+    width:100%;
+    display: grid;
+    font-weight: bold;
+}
+
+
+nav a:link{
+    font-size:xx-large;
+    padding-block: .1em
+}
+
+nav a:hover{
+    color: var(--nav-bg-color-rgba);
+}
+
+p{
+    padding: .5em;
+    max-width:70em;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--background-odd);
+}
+
+tr:nth-child(even) {
+    background-color: var(--background-even);
+}
