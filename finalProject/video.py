@@ -6,6 +6,7 @@ import os
 import random
 
 camera = PiCamera()
+camera.vflip = True
 pir = MotionSensor(4)
 Host = "localhost"
 User = "picam_user"
@@ -22,7 +23,7 @@ while going == True:
     videoPath = "/home/kpomroy/Desktop/CS121/finalProject/static/video" + str(videoNum)
     print("Starting recording")
     camera.start_recording(videoPath + ".h264")
-    sleep(30)
+    sleep(26)
     camera.stop_recording()
     print("Stopped recording")
 
