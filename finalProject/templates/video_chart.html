@@ -4,9 +4,19 @@
     <title>Raspberry Secure Videos</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel = "stylesheet"
+	  href = "static/custom.css"
+	  type = "text/css">
 </head>
+<header>
+    <h1>My Raspberry Secure</h1>
+</header>
+<nav>
+    <a href="/control">Controls</a>
+    <a href="/videos">Videos</a>
+</nav>
 <body>
-    <h2>Raspberry Secure Videos</h2>
+    <h2>Videos</h2>
     <main role="main" class="container">
         <table class="table table-hover">
             <thead>
@@ -21,7 +31,7 @@
                   <tr>
                       <td>{{item[0]}}</td>
                       <td>{{item[1]}}</td>
-		      <td><video width="320" height="240" controls><source src={{ url_for('static', filename=item[2] ) }} type="video/mp4"></video></td>
+		      <td><video width="400" height="300" controls><source src={{ url_for('static', filename=item[2] ) }} type="video/mp4"></video></td>
                   </tr>
                 {% endfor %}
             </tbody>
